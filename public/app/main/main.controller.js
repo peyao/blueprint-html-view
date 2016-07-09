@@ -6,7 +6,7 @@ angular
 function MainController($scope, $templateRequest, $sce, $compile) {
 
   var vm = this;
-  var keepTags = ['table', 'caption', 'tr', 'th', 'td', 'hr', 'a', 'br'];
+  var keepTags = ['table', 'caption', 'tr', 'th', 'td', 'hr', 'a', 'br', 'p'];
   var BLUEPRINT_FILENAME = 'nvme_rdl_doc.html';
   var templateUrl = $sce.getTrustedResourceUrl('/blueprint/' + BLUEPRINT_FILENAME);
   var strippedHtml = "";
